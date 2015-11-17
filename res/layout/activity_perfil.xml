@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/subBackground"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/foto_predio"
+            android:layout_width="122dp"
+            android:layout_height="134dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/foto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.39"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_perfil_predio_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="UserNamegrande"
+                android:textSize="18sp" 
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Dados"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_perfil_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_perfil_endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_colocacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colocacação: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_perfil_colocacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_perfil_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_perfil_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_medicao"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_medicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/s_perfil_medicao"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_medicao"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_cadastrar_medicao"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/botao"
+            android:text="@string/s_perfil_medicao_cadastrar"
+            android:width="5px"
+            android:color="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_cadastrar_morador_perfil"
+            android:layout_width="128dp"
+            android:layout_height="38dp"
+            android:background="@drawable/botao"
+            android:text="@string/s_perfil_predio_cadastrar" />
+
+        <Button
+            android:id="@+id/btn_sair"
+            android:layout_width="54dp"
+            android:layout_height="38dp"
+            android:background="@drawable/botao"
+            android:text="@string/s_perfil_predio_sair"
+            android:width="5px"
+            android:color="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>

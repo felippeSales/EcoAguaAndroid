@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/subBackground"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="@string/s_ranking"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/branco"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_posicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/s_ranking_posicao"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_ranking_nome"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_gastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/s_ranking_gastos"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:src="@drawable/barra" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/branco" >
+
+            <ListView
+                android:id="@+id/lvExpRanking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

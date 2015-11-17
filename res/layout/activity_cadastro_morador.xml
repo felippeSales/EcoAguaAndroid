@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/morador_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_morador_nome"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tf_morador_nome"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/morador_senha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/s_morador_senha1"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tf_morador_senha1"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/morador_senha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/s_morador_senha2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tf_morador_senha2"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/morador_predio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/s_morador_predio"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tf_morador_predio"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/morador_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/s_morador_ap"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tf_morador_ap"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_cadastrar_morador"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login"
+                android:text="@string/s_morador_btn_cadastrar" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
